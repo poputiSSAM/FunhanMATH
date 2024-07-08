@@ -9,7 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div id="password-container" class="container">
+        <header>
+            <h1>비밀번호 입력</h1>
+        </header>
+        <div class="password-input">
+            <input type="password" id="password" placeholder="비밀번호를 입력하세요">
+            <button onclick="checkPassword()">확인</button>
+        </div>
+    </div>
+
+    <div id="content-container" class="container" style="display: none;">
         <header>
             <img src="logo.png" alt="Logo" class="logo">
             <h1>수학 강의목록</h1>
@@ -18,8 +28,21 @@
             <a href="highschool.html" class="category"><i class="fas fa-book"></i>개념+유형 고등수학(상)</a>
             <a href="dailymission.html" class="category"><i class="fas fa-book"></i>고1반 일간미션</a>
             <a href="middleschool.html" class="category"><i class="fas fa-book"></i> 중등수학2-1 수매씽</a>
-
         </div>
     </div>
+
+    <script>
+        function checkPassword() {
+            const enteredPassword = document.getElementById('password').value;
+            const correctPassword = '12300';  // 여기에 원하는 비밀번호를 설정하세요
+
+            if (enteredPassword === correctPassword) {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content-container').style.display = 'block';
+            } else {
+                alert('비밀번호가 틀렸습니다.');
+            }
+        }
+    </script>
 </body>
 </html>
