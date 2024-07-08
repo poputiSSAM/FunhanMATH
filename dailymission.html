@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Math</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>고1반 일간미션</h1>
+        <div class="topics">
+            <div class="topic">
+                <h2>개념+유형 수(상) 개념편 233~234p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/fF4OR3GR5v8')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 수(상) 개념편 236~237p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/7l4STcimgLQ')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 수(상) 개념편 240~241p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/7Tn-SFTFI7o')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 수(상) 개념편 242~243p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/pVfbUJWtKOg')">Lecture 2</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
