@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고쟁이 공통수학1 STEP3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>고쟁이 공통수학1 STEP3</h1>
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>고쟁이 공통수학1 STEP3 22p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/t1gGgF4_aKQ')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>고쟁이 공통수학1 STEP3 23p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/YwF7ZpQyleo')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>고쟁이 공통수학1 STEP3 24p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/naCd5MH68JQ')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>고쟁이 공통수학1 STEP3 25p</h2>
+                <button onclick="openVideo('https://www.youtube.com/embed/fxEYHkaGqTA')">Lecture 4</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
