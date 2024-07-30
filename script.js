@@ -19,3 +19,7 @@ window.onclick = function(event) {
         closeVideo();
     }
 }
+
+function goBack() {
+    window.history.back();
+}
