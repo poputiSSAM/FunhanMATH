@@ -70,8 +70,8 @@ button {
     justify-content: center;
     width: 100%;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #007BFF; /* 버튼 배경색 */
+    color: #fff; /* 버튼 텍스트 색상 */
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -86,6 +86,46 @@ button i {
 button:hover {
     background-color: #0056b3;
 }
+
+.blue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007BFF; /* 파란색 배경 */
+    color: #fff; /* 흰색 텍스트 */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.blue-button:hover {
+    background-color: #0056b3; /* 파란색 호버 배경 */
+}
+
+/* Red button */
+.red-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FF0000; /* 빨간색 배경 */
+    color: #fff; /* 흰색 텍스트 */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.red-button:hover {
+    background-color: #cc0000; /* 빨간색 호버 배경 */
+}
+
 
 /* Modal styles */
 .modal {
