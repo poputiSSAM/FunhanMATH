@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div id="content-container" class="container" style="display: none;">
+    <div id="content-container1" class="container content-container" style="display: none;">
         <header>
             <img src="logo.png" alt="Logo" class="logo">
             <h1>수학 강의목록</h1>
@@ -37,14 +37,73 @@
         </div>
     </div>
 
+    <div id="content-container2" class="container content-container" style="display: none;">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>월수 고1반 수학 강의목록</h1>
+        </header>
+        <div class="categories">
+            <a href="high1.html" class="category blue-button"><i class="fas fa-book"></i>고1반 진도강의</a>
+            <a href="highweek.html" class="category blue-button"><i class="fas fa-book"></i> 고1반 주간미션(개+유,바이블 연습문제)</a>
+            <a href="dailymission.html" class="category blue-button"><i class="fas fa-book"></i>고1반 일간미션</a>
+            <a href="highschool.html" class="category red-button"><i class="fas fa-book"></i>개념+유형 고등수학(상) 진도강의</a>
+        </div>
+    </div>
+
+    <div id="content-container3" class="container content-container" style="display: none;">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>월수 중2반 수학 강의목록</h1>
+        </header>
+        <div class="categories">
+            <a href="mid1.html" class="category green-button"><i class="fas fa-book"></i>중등수학2-2 수매씽 진도강의</a>
+            <a href="mid2.html" class="category green-button"><i class="fas fa-book"></i>중등수학2-2 수매씽 개념편 문제해설</a>
+            <a href="high2.html" class="category red-button"><i class="fas fa-book"></i>고쟁이 공통수학1 STEP3</a>
+            <a href="middleschool.html" class="category green-button"><i class="fas fa-book"></i>중등수학2-1 수매씽 문제해설</a>
+        </div>
+    </div>
+
+    <div id="content-container4" class="container content-container" style="display: none;">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>화목 중1반 수학 강의목록</h1>
+        </header>
+        <div class="categories">
+            <a href="middleschool.html" class="category green-button"><i class="fas fa-book"></i>중등수학2-1 수매씽 문제해설</a>
+        </div>
+    </div>
+
+    <div id="content-container5" class="container content-container" style="display: none;">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>화목 중3반 수학 강의목록</h1>
+        </header>
+        <div class="categories">
+            <a href="mid3.html" class="category blue-button"><i class="fas fa-book"></i>중등수학3-2 수매씽 진도강의</a>
+        </div>
+    </div>
+
+
     <script>
         function checkPassword() {
             const enteredPassword = document.getElementById('password').value;
-            const correctPassword = '12321';  // 여기에 원하는 비밀번호를 설정하세요
 
-            if (enteredPassword === correctPassword) {
+            // 각 비밀번호에 따라 다른 컨테이너를 표시합니다.
+            if (enteredPassword === '12321') {
                 document.getElementById('password-container').style.display = 'none';
-                document.getElementById('content-container').style.display = 'block';
+                document.getElementById('content-container1').style.display = 'block';
+            } else if (enteredPassword === '1111') {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content-container2').style.display = 'block';
+            } else if (enteredPassword === '2222') {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content-container3').style.display = 'block';
+            } else if (enteredPassword === '3333') {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content-container4').style.display = 'block';
+            } else if (enteredPassword === '4444') {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content-container5').style.display = 'block';
             } else {
                 alert('비밀번호가 틀렸습니다. 영석샘에게 문의하세요~♥');
             }
