@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고1반 개념+유형 개념편 연습문제</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>고1반 주간미션(개념+유형 개념편 연습문제)</h1>
+        </header>        
+
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>개념+유형 수학(상) 개념편 원의방정식(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo(''https://www.youtube.com/embed/mR0vOxW3kEc')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 수학(상) 개념편 원과직선의관계(연습문제1~15)</h2>
+                <button class="blue-button" onclick="openVideo(''https://www.youtube.com/embed/kQ4A1eddU6U')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 수학(상) 개념편 원과직선의관계(연습문제16~18)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/2gkJO7bwh_c')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 평행이동(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/6rF8DXTlh3E')">Lecture 4</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 대칭이동(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/Im7xd4yiBlA')">Lecture 5</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 집합(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/tYnKrUYkTVY')">Lecture 6</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 집합의 연산(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/rbZvbi2osqo')">Lecture 7</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 명제와조건(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/9U5atuHcxeA')">Lecture 8</button>
+            </div>
+            <div class="topic">
+                <h2>개념+유형 명제의 역과 대우(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/zdfPclQXgPY')">Lecture 9</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

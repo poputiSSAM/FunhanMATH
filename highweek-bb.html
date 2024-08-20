@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고1반 수학의 바이블 연습문제)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>고1반 주간미션(바이블 연습문제)</h1>
+        </header>        
+
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>수학의바이블 원의방정식 연습문제(1~10번)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/ukGGRbPGyYc')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블 원의방정식 연습문제(11~20번)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/5raGHcoJaUE')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블 원의방정식 연습문제(21~26번)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/FmmXaGeCrN0')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블 원의방정식 연습문제(27~30번)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/Ay6otJLfA3A')">Lecture 4</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블 도형의이동 연습문제</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/qWob_JBsRNs')">Lecture 5</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블24 수학(하) 1.집합 (연습문제(1~15))</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/Eebg8uGe7ug')">Lecture 6</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블24 수학(하) 1.집합 (연습문제16~19번)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/kdKBFAXk3Vc')">Lecture 7</button>
+            </div>
+            <div class="topic">
+                <h2>수학의바이블24 수학(하) 2.명제(연습문제)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/z54MN86HXlY')">Lecture 8</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
