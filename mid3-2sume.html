@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중3-2 수매씽 진도강의</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>중3-2 수매씽 진도강의</h1>
+        </header>
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>수매씽 중3-2 삼각비</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/0d6q-_hvIuA')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 삼각비(2)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/VLhmW1yPEEs')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 삼각비를 이용한 길이와 넓이</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/dG2e9B0-hjw')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 원과직선</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/i2V06scL-rU')">Lecture 4</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 원주각</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/RkOiT6f4qy0')">Lecture 5</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 대푯값과산포도</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/uLTGNb1-7kU')">Lecture 6</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 산점도와상관관계</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/k9fgLTTROR0')">Lecture 7</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 삼각비(21-22p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/_sJMwr-M6Io')">Lecture 8</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 삼각비의 활용(37-38p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/lTqDV5kaYQw')">Lecture 9</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 원의현(51p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/m0XklooYU98')">Lecture 10</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 원의접선(58,59p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/ogjXbE2Echk')">Lecture 11</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 원주각(71p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/9Sxyuoed2-c')">Lecture 12</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 원주각의활용(80p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/wcNlRE3ci60')">Lecture 13</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

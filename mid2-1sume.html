@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중2-1 수매씽 진도강의</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>중2-1 수매씽 진도강의</h1>
+        </header>
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>수매씽 개념 중학 2-1 1.유리수와 순환소수</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/x6KtFKb0V94')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 2.지수법칙과 단항식의 곱셈과 나눗셈</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/eWTQV7oOpHE')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 3. 다항식의 계산</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/qAIvqPP6WXk')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 4.부등식의 해와 그 성질</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/JLG9bXTNLqk')">Lecture 4</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 5.일차부등식의 활용</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/NS28kPGuwmg')">Lecture 5</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 6.연립방정식과 그 해</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/U1R_eLakYag')">Lecture 6</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 7.연립방정식의 활용</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/t4NLZkrBtRs')">Lecture 7</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 8.함수와 일차함수</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/WtINrdT7RJo')">Lecture 8</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 중3-2 삼각비의 활용(37-38p)</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/lTqDV5kaYQw')">Lecture 9</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 9.일차함수와 그래프</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/lIiHyYs5WZU')">Lecture 10</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 10.일차함수의 식과 활용</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/hF_s9sw4VVc')">Lecture 11</button>
+            </div>
+            <div class="topic">
+                <h2>수매씽 개념 중등수학 2-1 11.일차함수와 일차방정식의 관계</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/tCmXS4-Iebo')">Lecture 12</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
