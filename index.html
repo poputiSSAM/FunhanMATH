@@ -11,7 +11,7 @@
 <body>
     <div id="password-container" class="container">
         <header>
-            <h1>비밀번호 입력</h1>
+            <h1>비밀번호 입력 / 체험판 1111</h1>
         </header>
         <div class="password-input">
             <input type="password" id="password" placeholder="비밀번호를 입력하세요">
@@ -87,6 +87,18 @@
         </div>
     </div>
 
+    <div id="content-container6" class="container content-container" style="display: none;">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>체험판 수학 강의목록</h1>
+        </header>
+        <div class="categories">
+            <a href="highschool.html" class="category red-button"><i class="fas fa-book"></i>개념+유형 고등수학(상) 진도강의</a>
+            <a href="middleschool.html" class="category green-button"><i class="fas fa-book"></i>중등수학2-1 수매씽 문제해설</a>
+        </div>
+    </div>
+
+
 
     <script>
         function checkPassword() {
@@ -108,6 +120,9 @@
             } else if (enteredPassword === 'jung3') {
                 document.getElementById('password-container').style.display = 'none';
                 document.getElementById('content-container5').style.display = 'block';
+            } else if (enteredPassword === '1111') {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content-container6').style.display = 'block';
             } else {
                 alert('비밀번호가 틀렸습니다. 영석샘에게 문의하세요~♥');
             }
