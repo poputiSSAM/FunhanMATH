@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개념+유형 공통수학1 강의</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>개념+유형 공통수학1 강의</h1>
+        </header>
+
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>다항식의 연산</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/4gpkNN-3x2E')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>나머지정리</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/1YbX3I4T7LI')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>인수분해</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/rrS0d5ZYt-4
+')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>복소수</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/5_AcXitQuPs')">Lecture 4</button>
+            </div>
+            <div class="topic">
+                <h2>이차방정식의 판별식</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/MuBl9nG_ONI')">Lecture 5</button>
+            </div>
+            <div class="topic">
+                <h2>이차방정식의 근과 계수의 관계</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/LDeLM-qneJI')">Lecture 6</button>
+            </div>
+            <div class="topic">
+                <h2>이차방정식과 이차함수</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/DRY87sKd0nk')">Lecture 7</button>
+            </div>
+            <div class="topic">
+                <h2>삼차방정식과 사차방정식</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/wrpk94ev9vk')">Lecture 8</button>
+            </div>
+            <div class="topic">
+                <h2>연립이차방정식과 부정방정식</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/6aVdJWcS48g')">Lecture 9</button>
+            </div>
+            <div class="topic">
+                <h2>연립일차부등식</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/11MlMdpx3XM')">Lecture 10</button>
+            </div>
+            <div class="topic">
+                <h2>이차부등식</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/ZdkGHL0Dq3U')">Lecture 11</button>
+            </div>
+            <div class="topic">
+                <h2>연립이차부등식</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/iTbeXajhEgc')">Lecture 12</button>
+            </div>
+            <div class="topic">
+                <h2>합의 법칙과 곱의 법칙</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/-q4pxLNkP7Y')">Lecture 13</button>
+            </div>
+            <div class="topic">
+                <h2>순열</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/yOR8O1N6RRo')">Lecture 14</button>
+            </div>
+            <div class="topic">
+                <h2>조합</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/KeCivzD-pAc')">Lecture 15</button>
+            </div>
+            <div class="topic">
+                <h2>행렬</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/YTV2t-G_YpI')">Lecture 16</button>
+            </div>
+            <div class="topic">
+                <h2>행렬의 곱셈</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/F6ez7nL_-84')">Lecture 17</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
