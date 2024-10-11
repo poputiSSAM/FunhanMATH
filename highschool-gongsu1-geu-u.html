@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개념+유형 공통수학1 유형편 문제풀이</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>개념+유형 공통수학1 유형편 문제풀이</h1>
+        </header>
+
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="topics">
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 4p</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/JR9h6QrLvKs')">Lecture 1</button>
+            </div>
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 5p</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/m7G68byR1t8')">Lecture 2</button>
+            </div>
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 6p</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/3R71jJ1NCK8
+')">Lecture 3</button>
+            </div>
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 p7</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/OOVsAFp_uPQ')">Lecture 4</button>
+            </div>
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 8p</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/Fn1KhXqD1mc')">Lecture 5</button>
+            </div>
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 9p</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/teCzcDQAUAM')">Lecture 6</button>
+            </div>
+            <div class="topic">
+                <h2>개념유형 공통수학1 유형편 10p</h2>
+                <button class="blue-button" onclick="openVideo('https://www.youtube.com/embed/R0IuKDK08VM')">Lecture 7</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
