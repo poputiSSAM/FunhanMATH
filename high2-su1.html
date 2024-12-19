@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고2반 진도 및 질문강의</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>수학 강의목록</h1>
+        </header>
+        <button class="back-button" onclick="goBack()">전 페이지로 가기</button>
+        <div class="categories">
+            <a href="high2-mirensu1.html" class="category blue-button"><i class="fas fa-book"></i>미래엔 수학1 교과서 진도 강의</a>
+            <a href="high2-maplsu1.html" class="category blue-button"><i class="fas fa-book"></i> 마플시너지 질문 강의</a>
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
