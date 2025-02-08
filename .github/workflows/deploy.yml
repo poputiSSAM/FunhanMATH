@@ -11,21 +11,18 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build the PWA
-        run: npm run build
-
-      - name: Install Capacitor CLI
-        run: npm install @capacitor/cli @capacitor/core
+      - name: Ensure Capacitor is initialized
+        run: npx cap sync
 
       - name: Add Android platform
         run: npx cap add android
@@ -33,15 +30,25 @@ jobs:
       - name: Copy web assets
         run: npx cap copy android
 
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Build Android app
         run: |
           cd android
+          chmod +x gradlew
           ./gradlew assembleRelease
+
+      - name: Create Google Play service account JSON
+        run: echo '${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}' > service-account.json
 
       - name: Upload APK to Google Play
         uses: r0adkll/upload-google-play@v1
         with:
-          serviceAccountJson: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
+          serviceAccountJson: service-account.json
           packageName: com.example.mathlectures
           releaseFile: android/app/build/outputs/apk/release/app-release.apk
           track: internal
