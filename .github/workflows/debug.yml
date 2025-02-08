@@ -1,0 +1,24 @@
+name: Debug Package.json Location
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Show directory structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Listing files in root:"
+          ls -al
+          echo "Checking inside FunhanMATH (if exists):"
+          if [ -d "FunhanMATH" ]; then ls -al FunhanMATH; fi
